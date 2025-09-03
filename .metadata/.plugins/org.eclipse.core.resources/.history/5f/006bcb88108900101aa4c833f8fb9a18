@@ -33,14 +33,11 @@ public class FigurasGeometricas {
 		}
 
 		@Override
-	    public String toString() {
-	        StringBuilder sb = new StringBuilder();
-	        for (Forma forma : formas) {
-	            sb.append(forma.toString()).append("\n");
-	        }
-	        sb.append("Área Total: ").append(String.format("%.2f", calcularAreaTotal())).append("\n");
-	        sb.append("Perímetro Total: ").append(String.format("%.2f", calcularPerimetroTotal()));
-	        return sb.toString();
-	    }
+		public String toString() {
+			StringBuilder sb = new StringBuilder();
+			sb.append("Área Total: ").append(String.format("%.2f", calcularAreaTotal())).append("\n");
+			sb.append("Perímetro Total: ").append(String.format("%.2f", calcularPerimetroTotal()));
+			return sb.toString();
+		}
 }
 

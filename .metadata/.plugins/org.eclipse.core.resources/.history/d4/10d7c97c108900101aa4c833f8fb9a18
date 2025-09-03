@@ -36,9 +36,4 @@ public class Retangulo implements Forma {
         return 2 * (largura + altura);
     }
     
-    @Override
-    public String toString() {
-        return "Retângulo [largura=" + largura + ", altura=" + altura + ", área=" + calcularArea() + ", perímetro=" + calcularPerimetro() + "]";
-    }
-    
 }

@@ -16,9 +16,4 @@ public class Quadrado implements Forma {
     public double calcularPerimetro() {
         return 4 * lado;
     }
-    
-    @Override
-    public String toString() {
-        return "Quadrado [lado=" + lado + ", área=" + calcularArea() + ", perímetro=" + calcularPerimetro() + "]";
-    }
 }

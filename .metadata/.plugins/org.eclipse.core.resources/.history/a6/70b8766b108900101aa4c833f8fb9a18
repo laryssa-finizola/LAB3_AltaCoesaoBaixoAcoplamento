@@ -26,9 +26,4 @@ public class Circulo implements Forma {
         return 2 * Math.PI * raio;
     }
     
-    @Override
-    public String toString() {
-        return "Círculo [raio=" + raio + ", área=" + calcularArea() + ", perímetro=" + calcularPerimetro() + "]";
-    }
-    
 }

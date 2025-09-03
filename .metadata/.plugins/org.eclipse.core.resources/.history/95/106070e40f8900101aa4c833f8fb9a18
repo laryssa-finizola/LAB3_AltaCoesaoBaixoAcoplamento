@@ -1,0 +1,12 @@
+package main;
+
+public class Main {
+	public static void main(String[] args) {
+
+		FigurasGeometricas figuras = new FigurasGeometricas(5, 5, 5, 5);
+
+		System.out.println(figuras.toString());
+	}
+
+}
+

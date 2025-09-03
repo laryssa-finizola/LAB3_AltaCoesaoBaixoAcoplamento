@@ -1,0 +1,9 @@
+package main;
+
+public class Quadrado exntends Retangulo {
+
+    public Quadrado(double lado) {
+        super();
+    }
+
+}

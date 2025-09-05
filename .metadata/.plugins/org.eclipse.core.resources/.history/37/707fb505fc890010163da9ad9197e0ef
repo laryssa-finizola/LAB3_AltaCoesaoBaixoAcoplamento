@@ -1,0 +1,15 @@
+package main;
+
+public class Main {
+	public static void main(String[] args) {
+
+		FigurasGeometricas figuras = new FigurasGeometricas();
+		
+		figuras.adicionarForma(new Circulo(2.5));
+		figuras.adicionarForma(new Retangulo(5, 5));
+		figuras.adicionarForma(new Quadrado(5));
+		
+		System.out.println(figuras.toString());
+	}
+}
+

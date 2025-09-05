@@ -1,0 +1,46 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FigurasGeometricas {
+		private List<Forma> formas;
+
+		public FigurasGeometricas() {
+			this.formas = new ArrayList<>();
+		}
+
+		public void adicionarForma(Forma forma) {
+			if (forma != null) {
+				this.formas.add(forma);
+			}
+		}
+
+		public double calcularAreaTotal() {
+			double areaTotal = 0.0;
+			for (Forma forma : formas) {
+				areaTotal += forma.calcularArea();
+			}
+			return areaTotal;
+		}
+
+		public double calcularPerimetroTotal() {
+			double perimetroTotal = 0.0;
+			for (Forma forma : formas) {
+				perimetroTotal += forma.calcularPerimetro();
+			}
+			return perimetroTotal;
+		}
+
+		@Override
+	    public String toString() {
+	        StringBuilder sb = new StringBuilder();
+	        for (Forma forma : formas) {
+	            sb.append(forma.toString()).append("\n");
+	        }
+	        sb.append("Área Total: ").append(String.format("%.2f", calcularAreaTotal())).append("\n");
+	        sb.append("Perímetro Total: ").append(String.format("%.2f", calcularPerimetroTotal()));
+	        return sb.toString();
+	    }
+}
+

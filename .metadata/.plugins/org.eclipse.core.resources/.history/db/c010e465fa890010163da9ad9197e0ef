@@ -1,0 +1,68 @@
+ackage test;
+
+import main.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CirculoTest {
+
+    @Test
+    void deveCriarCirculoComRaioValido() {
+
+        Circulo circulo = new Circulo(2.0);
+
+        assertEquals(2.0, circulo.getRaio());
+        assertEquals("Circulo", circulo.getNome());
+    }
+
+    @Test
+    void deveLancarExceptionSeRaioForZero() {
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Circulo(0));
+
+        assertTrue(exception.getMessage().contains("O raio do círculo nao pode ser negativo ou 0!!"));
+
+    }
+
+    @Test
+    void deveLancarExceptionSeRaioForNegativo() {
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new Circulo(-5));
+
+        assertTrue(exception.getMessage().contains("O raio do círculo nao pode ser negativo ou 0!!"));
+    }
+
+    @Test
+    void deveCalcularAreaCorretamente() {
+        Circulo circulo = new Circulo(3.0);
+
+        double valorEsperado = Math.PI * 3.0 * 3.0;
+
+        assertEquals(valorEsperado, circulo.calcularArea(), 0.0001);
+    }
+
+    @Test
+    void deveCalcularPerimetroCorretamente() {
+
+        Circulo circulo = new Circulo(4.0);
+
+        double valorEsperado = 2 * Math.PI * 4.0;
+
+        assertEquals(valorEsperado, circulo.calcularPerimetro(), 0.0001);
+    }
+
+    @Test
+    void devePermitirSetarNome() {
+        Circulo circulo = new Circulo(5.0);
+
+        circulo.setNome("olucric");
+
+        assertEquals("olucric", circulo.getNome());
+    }
+
+
+
+
+
+
+}

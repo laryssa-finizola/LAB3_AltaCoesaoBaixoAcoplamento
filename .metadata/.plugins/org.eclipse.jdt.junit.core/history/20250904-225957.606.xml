@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CirculoTest" project="lab03" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="test.CirculoTest" time="0.023" displayname="CirculoTest" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]">
+    <testcase name="devePermitirSetarNome" classname="test.CirculoTest" time="0.017" displayname="devePermitirSetarNome()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:devePermitirSetarNome()]"/>
+    <testcase name="deveCalcularPerimetroCorretamente" classname="test.CirculoTest" time="0.001" displayname="deveCalcularPerimetroCorretamente()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:deveCalcularPerimetroCorretamente()]"/>
+    <testcase name="deveLancarExceptionSeRaioForNegativo" classname="test.CirculoTest" time="0.002" displayname="deveLancarExceptionSeRaioForNegativo()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:deveLancarExceptionSeRaioForNegativo()]"/>
+    <testcase name="deveCalcularAreaCorretamente" classname="test.CirculoTest" time="0.001" displayname="deveCalcularAreaCorretamente()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:deveCalcularAreaCorretamente()]"/>
+    <testcase name="deveLancarExceptionSeRaioForZero" classname="test.CirculoTest" time="0.001" displayname="deveLancarExceptionSeRaioForZero()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:deveLancarExceptionSeRaioForZero()]"/>
+    <testcase name="deveCriarCirculoComRaioValido" classname="test.CirculoTest" time="0.001" displayname="deveCriarCirculoComRaioValido()" uniqueid="[engine:junit-jupiter]/[class:test.CirculoTest]/[method:deveCriarCirculoComRaioValido()]"/>
+  </testsuite>
+</testrun>
